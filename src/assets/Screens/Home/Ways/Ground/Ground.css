@@ -1,0 +1,253 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("../../../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Ground
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Ground {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-image: url("../../../../img/Ground-Shipping-3.jpg");
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.Ground .info-landing .container:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 70vh;
+  flex-direction: column;
+  gap: 15px;
+}
+.Ground .info-landing .container:nth-child(2) p {
+  color: var(--white-color);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.Ground .info-landing .container:nth-child(2) h2 {
+  position: relative;
+  font-size: 50px;
+  color: var(--white-color);
+  letter-spacing: 2px;
+}
+.Ground .info-landing .container:nth-child(2) h2::before {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 0;
+}
+.Ground .info-landing .container:nth-child(2) .actions {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+.Ground .info-landing .container:nth-child(2) .actions a {
+  position: relative;
+  padding: 8px 12px;
+  background-color: var(--main-color-alt);
+  color: var(--white-color);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Ground form-container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.form-container {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.form-container .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-container .container > p {
+  position: relative;
+  color: #888;
+  font-size: 28px;
+  font-weight: bold;
+}
+.form-container .container h1 {
+  position: relative;
+  color: var(--main-color-alt);
+  padding: 10px 0;
+}
+.form-container .container > h1::before {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 0;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Ground form-container box
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+
+.form-container .container .box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-container .container .box label {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #242424;
+}
+.form-container .container .box input:not(input[type="checkbox"]) {
+  position: relative;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.form-container .container .box input:not(input[type="checkbox"]):focus {
+  outline: 0;
+}
+.form-container .container .box.door {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.form-container .container .box.door label {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color-alt);
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Ground form-container cargo fcl
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.form-container .container .cargo {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.form-container .container .cargo h1 {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  color: var(--main-color-alt);
+}
+.form-container .container .cargo .links {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.form-container .container .cargo .links span {
+  padding: 10px 12px;
+  background-color: #eee;
+  color: var(--main-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--main-transition);
+}
+.form-container .container .cargo .links span.active {
+  background-color: var(--main-color-alt);
+  color: var(--white-color);
+}
+.form-container .container .cargo .fcl,
+.form-container .container .fcl-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.form-container .container .cargo .fcl .container-type,
+.form-container .container .fcl-data .container-type {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.form-container .container .cargo .fcl .container-type input,
+.form-container .container .fcl-data .container-type input {
+  position: relative;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.form-container .container .cargo .fcl .container-type input:focus,
+.form-container .container .fcl-data .container-type input:focus {
+  outline: 0;
+}
+.form-container .container .cargo .fcl .container-type:last-child,
+.form-container .container .fcl-data .container-type:last-child {
+  width: fit-content;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+.form-container .container .cargo .fcl .container-type button,
+.form-container .container .fcl-data .container-type button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  outline: 0;
+  background-color: var(--main-color);
+  cursor: pointer;
+  color: var(--white-color);
+  border-radius: 10px;
+}
+.form-container .container .fcl-data .container-type button {
+  background-color: rgb(245, 17, 17);
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Ground form-container cargo LCL
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.form-container .container .cargo .LCL {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-container .container .cargo .LCL .container-type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Ground form-container cargo LCL
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.form-container .container .GroundrchRate {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: var(--main-color-alt);
+  border: 0;
+  transition: var(--main-transition);
+  color: var(--white-color);
+}

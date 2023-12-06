@@ -1,0 +1,342 @@
+.quote_order {
+  padding: 30px;
+}
+
+.quote_order_details_div {
+  padding: 20px;
+  box-shadow: 0 2px 24px -2px rgb(217 217 217 / 49%);
+}
+
+.quote_order_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+}
+
+.quote_order_details .quote_order_left_from_1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quote_last_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote_order_service_left {
+  padding: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  width: calc(100% - 250px -600px);
+  /* background-color: blue; */
+}
+
+.quote_last_div .last_div_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quote_order_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quote_order_money {
+  color: rgb(20, 111, 183);
+}
+
+.quote_last_div .last_div_left h5 {
+  background-color: rgb(20, 178, 46);
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+}
+
+.quote_order_service {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.quote_order_service_right {
+  width: 200px;
+}
+
+.quote_order_service_right>div {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 24px -2px rgb(217 217 217 / 49%);
+  padding: 10px;
+  width: 240px;
+}
+
+.quote_order_service_right>div>div>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote_order_service_right>div>div>h4 {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.quote_order_service_right>div:last-of-type button {
+  color: rgb(11, 93, 151);
+  width: 100%;
+  border: 2px solid rgb(11, 93, 151);
+  ;
+  background-color: transparent;
+  font-size: 20px;
+  height: 40px;
+  text-transform: capitalize;
+}
+
+.addition_services,
+.shipment_details,
+.billing_det,
+.payment_options {
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.addition_services .addition_service {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+
+}
+
+.quote_order_service_left_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote_order_service_left_btns>button {
+  width: 49%;
+  border: none;
+  height: 50px;
+}
+
+.quote_order_service_left_btns>button:first-of-type {
+  border: 2px solid rgb(11, 93, 151);
+  background-color: transparent;
+  color: rgb(11, 93, 151);
+  font-size: 20px;
+}
+
+.quote_order_service_left_btns>button:last-of-type {
+  background-color: rgb(11, 93, 151);
+  color: white;
+  font-size: 20px;
+
+}
+
+.addition_service>div {
+  display: flex;
+  gap: 4px;
+  align-items: start;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.addition_service>button {
+  background-color: rgb(11, 93, 151);
+  color: white;
+  width: 16%;
+  height: 30px;
+  text-transform: capitalize;
+  border: none;
+}
+
+.addition_service>div>img {
+  width: 20px;
+  height: 20px;
+}
+
+.shipment_details>h4,
+.billing_det>h2 {
+  color: rgb(236, 103, 41);
+}
+
+.shipment_details>div .shipment_details_divs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.shipment_details_divs input {
+  width: 100%;
+}
+
+.shipment_details button,
+.billing_det button {
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: rgb(20, 111, 183);
+  border: none;
+}
+
+.billing_form>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.billing_form>div>input {
+  width: 48%;
+  padding: 20px 10px !important;
+}
+
+.payment_options>h3 {
+  color: rgb(236, 103, 41);
+  font-size: 14px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.payment_options .payment_methods .payment_method {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+.payment_methods .payment_method>svg {
+  font-size: 40px;
+}
+
+.payment_methods .payment_method .payment_method_text>h5 {
+  font-size: 16px;
+  color: rgb(11, 93, 151);
+}
+
+.payment_methods .payment_method .payment_method_text>h6 {
+  font-weight: 500;
+}
+
+.payment_methods .payment_method .payment_method_text>p {
+  font-size: 14px;
+  max-width: 400px;
+}
+
+.payment_methods .payment_method>button {
+  background-color: rgb(11, 93, 151);
+  height: 50px;
+  width: 150px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 6px 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: start;
+  margin: 20px 0px;
+}
+
+.checkbox>p {
+  margin: 0px;
+}
+
+.lastpay {
+  width: 100%;
+  background-color: rgb(11, 93, 151);
+  border: none;
+  height: 40px;
+  color: white;
+}
+
+.adding_done {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adding_done>img {
+  width: 30px;
+}
+
+.adding_done>h3 {
+  color: rgb(236, 103, 41);
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  margin: 0px;
+  color: rgb(20, 178, 46);
+}
+
+@media (max-width:992px) {
+  .payment_options .payment_methods .payment_method {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width:767px) {
+  .quote_order_service {
+    flex-direction: column;
+  }
+
+  .quote_order_service_left {
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    width: 100%;
+    /* background-color: blue; */
+  }
+
+  .quote_order_service_right {
+    width: 100%;
+  }
+}
+
+.quote_order_service_right {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width:565px) {
+  .billing_form>div>input {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  .PhoneInput {
+    width: 100%;
+    background-color: #ccc;
+    padding-left: 5px;
+    border-radius: 15px;
+  }
+}

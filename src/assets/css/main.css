@@ -1,0 +1,109 @@
+@import url("./root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# General elements
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+p {
+  color: var(--main-p-color);
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #767676;
+  font-weight: 400;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*Mobile Screen*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*Tab Screen*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*PC Screen*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Scroll bar
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #767676;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px #0bb3f550;
+  backdrop-filter: blur(50px);
+  /* border-radius: 3px; */
+}
+::-webkit-scrollbar-thumb:hover {
+  /* background: var(--main-color); */
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# back to top 
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.back-to-top {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  z-index: 999;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none !important;
+}

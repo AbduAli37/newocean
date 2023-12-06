@@ -1,0 +1,81 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("../../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Transportation Methods
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.TransportationMethods {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--main-color-alt);
+}
+.TransportationMethods .container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .TransportationMethods .container {
+    gap: 10px;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Transportation Methods menu
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.TransportationMethods .container .menu {
+  display: flex;
+  background-color: #fff;
+  width: fit-content;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+
+.TransportationMethods .container .menu li {
+  display: flex;
+  gap: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: var(--orange-color);
+  transition: var(--main-transition);
+}
+.TransportationMethods .container .menu li.active {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+@media (max-width: 992px) {
+  .TransportationMethods .container .menu {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .TransportationMethods .container .menu li {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Transportation Methods box
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.TransportationMethods .container .box {
+  background-color: #fff;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+}
+@media (max-width: 992px) {
+  .TransportationMethods .container .box {
+    background-color: transparent;
+    border-radius: 12px;
+  }
+}
+
+#root > div > div:nth-child(5) > div.content {
+  display: none;
+}
+
+.TransportationMethods {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}

@@ -1,0 +1,56 @@
+.showmore_func {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.297);
+  z-index: 323443;
+  top: 0px;
+  left: 0px;
+}
+
+.showmore_div {
+  position: fixed;
+  background-color: white;
+  width: 600px;
+  max-width: 100%;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.showmore_div table {
+  margin-bottom: 20px !important;
+}
+
+
+
+.showmore_div button {
+  min-width: 150px;
+  padding: 11px 15px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 0;
+  border-radius: 4px;
+  transition: .5s ease-in-out;
+}
+
+.showmore_div button, .cancel_request {
+  background-color: #d44545;
+  color: white;
+  border: 3.6px solid#d44545;
+}
+
+.confirm_request {
+  background-color: #1f501f !important;
+  color: white;
+  border: 3px solid#1f501f !important;
+}
+
+.showmore_div button:hover{
+  color: black;
+  background-color: transparent !important;
+}

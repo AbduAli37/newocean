@@ -1,0 +1,91 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("../../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.content {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.awssld__bullets {
+  bottom: 15px !important;
+  z-index: 999;
+  display: flex;
+  gap: 5px;
+}
+.awssld__bullets button {
+  width: 150px !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+}
+.awssld__bullets--loading,
+.awssld__bullets--active {
+  background-color: var(--main-color) !important;
+  border-radius: 0 !important;
+  width: 150px !important;
+  height: 2px !important;
+  transform: scale(1) !important;
+}
+.landing .content .slider_Setting {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing details
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.landing .content .slider_Setting .data {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.landing .content .slider_Setting .data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing .content .slider_Setting .container {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  gap: 15px;
+}
+
+.landing .content .slider_Setting .container p {
+  position: relative;
+  font-weight: bold;
+  color: var(--white-color);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.landing .content .slider_Setting .container h5 {
+  font-size: 56px;
+  width: 90%;
+  color: var(--white-color);
+}
+.landing .content .slider_Setting .container .actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.landing .content .slider_Setting .container a {
+  background-color: var(--main-color-alt);
+  color: var(--white-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: capitalize;
+}

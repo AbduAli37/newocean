@@ -1,0 +1,249 @@
+.shipments .navs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 240px;
+  position: fixed;
+  /* left: 0px; */
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.4s ease-in-out all;
+}
+
+.navs.hidden {
+  width: 0px;
+}
+
+.navs>img {
+  width: 100%;
+}
+
+.navsLinks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navs a,
+h6 {
+  color: #13171c;
+  margin: 3px 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 22px;
+  position: relative;
+  padding: 18px 22px;
+  cursor: pointer;
+  font-size: 12px !important;
+  gap: 10px;
+}
+
+:where(.css-dev-only-do-not-override-1wazalj).ant-pagination .ant-pagination-item-active a {
+  color: #1677ff;
+  text-align: center !important;
+}
+
+.navs h6.active {
+  background-color: #46a7dd;
+  color: white;
+}
+
+.navs.hidden>a {
+  display: none;
+}
+
+.navs>svg {
+  position: absolute;
+  right: -9px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.shipments .shipments_cont {
+  width: calc(100% - 300px);
+  margin: 0px 0 0 224px;
+  transition: 0.4s ease-in-out all;
+  display: flex;
+  justify-content: center;
+}
+
+.shipments .shipments_cont.hidden {
+  width: 100%;
+  margin: 0px;
+}
+
+.shipments_cont>div {
+  width: 100%;
+}
+
+/*  */
+
+.shipments .navs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: sticky !important;
+  top: 0 !important;
+  height: 100vh !important;
+  width: 180px !important;
+}
+
+.shipments .shipments_cont {
+  margin: 0 !important;
+  width: calc(100% - 200px) !important;
+}
+
+.shipments {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  width: calc(100%);
+}
+
+.navs>img {
+  width: 140px !important;
+  /* margin-bottom: 68px; */
+}
+
+.quotedetials .TransportationMethods {
+  background: rgb(217 217 217 / 20%);
+  border-radius: 5px;
+  box-shadow: 0 2px 24px -2px rgb(217 217 217 / 49%);
+}
+
+.quote_order_service_right>div {
+  margin-bottom: 30px;
+  box-shadow: 0 2px 24px -2px rgb(217 217 217 / 49%);
+  padding: 10px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quote_order_service_right>div:last-of-type a {
+  color: rgb(11, 93, 151);
+  width: 100%;
+  border: 2px solid rgb(11, 93, 151);
+  background-color: transparent;
+  font-size: 20px;
+  height: 40px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 705px) {
+  .shipments .navs {
+    width: 50px !important;
+  }
+
+  .shipments .navs a {
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+    font-size: 19px;
+  }
+
+  .shipments .navs a span {
+    display: none;
+  }
+
+  .shipments .shipments_cont {
+    width: calc(100% - 61px) !important;
+  }
+
+  .navs>img {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+
+  .navs>svg {
+    display: none;
+  }
+
+  .shipments_page {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 512px) {
+  .TransportationMethods .container .menu {
+    overflow-x: auto;
+  }
+}
+
+.navs>img {
+  margin-bottom: 0 !important;
+}
+
+#root>div.Auth>div>div.navs>h1 span:hover {
+  background: rgb(20, 111, 183);
+  color: white;
+}
+
+#root>div.Auth>div>div.navs>h1 span {
+  padding: 10px;
+  border: 2px solid;
+  width: 100%;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+#root>div.Auth>div>div.navs>h1 {
+  width: 100%;
+  padding: 40px 20px;
+  color: rgb(20, 111, 183);
+}
+
+#root>div.Auth>div>div.navs>div>h6 {
+  color: #7b7b8e !important;
+  font-weight: 500;
+}
+
+#root>div.Auth>div>div.navs>div>h6.active {
+  color: white !important;
+}
+
+.addressesDetails {
+  width: 100%;
+  padding: 5px;
+  overflow-x: auto;
+}
+
+@media (max-width: 772px) {
+  #root>div.Auth>div>div.navs>h1 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 705px) {
+  #root>div.Auth>div>div.navs>div {
+    margin-top: 35px;
+  }
+
+  #root>div.Auth>div>div.navs>div>h6 {
+    font-size: 39px;
+    width: 100%;
+    padding: 22px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #root>div.Auth>div>div.navs>div>h6 span {
+    display: none;
+  }
+}
+
+.changequoteheight .TransportationMethods {
+  height: fit-content !important;
+  min-height: fit-content !important;
+}

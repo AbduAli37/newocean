@@ -1,0 +1,17 @@
+input {
+  outline: none;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.whats_icon {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.whats_icon img {
+  width: 40px;
+  cursor: pointer;
+}

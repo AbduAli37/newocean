@@ -1,0 +1,92 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("../../../css/root.css");
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# True Information
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.TrueInformation {
+  position: relative;
+  width: 100%;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.TrueInformation .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root top
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.TrueInformation .container .top {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.TrueInformation .container .top .box {
+  position: relative;
+  width: 100%;
+}
+.TrueInformation .container .top .box:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.TrueInformation .container .top .box:first-child p {
+  font-size: 25px;
+}
+.TrueInformation .container .top .box:first-child h1 {
+  font-weight: normal;
+  color: #999;
+}
+
+.TrueInformation .container .top .box.quote p {
+  position: relative;
+  padding-left: 50px;
+  text-overflow: ellipsis;
+  text-align: justify;
+  width: 100%;
+}
+.TrueInformation .container .top .box.quote p::before {
+  position: absolute;
+  content: "\f10d";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  left: 0;
+  top: 0;
+  font-size: 35px;
+}
+.TrueInformation .container .top .box img {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root bottom
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.TrueInformation .container .bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+.TrueInformation .container .bottom .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.TrueInformation .container .bottom .box h1 {
+  color: var(--main-color-alt);
+  font-size: 50px;
+  text-align: center;
+}
+
+.TrueInformation .container .bottom .box p {
+  text-align: center;
+  letter-spacing: 2px;
+}

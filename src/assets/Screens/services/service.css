@@ -1,0 +1,57 @@
+.srvs{
+  padding: 20px;
+  background-image: url("../../assets/serback.jpg");
+}
+.srvs >h4{
+  color: #2ea2cc;
+font-family: "Poppins";
+font-weight: 700;
+text-align: center;
+margin-bottom: 10px;
+font-size: 19px;
+}
+.srvs >p {
+  color: #282828;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  height: 350px;
+  overflow: hidden;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.srvs .service{
+  padding: 20px;
+
+}
+.srvs .service img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.service .more{
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: serif;
+  color:#2ea2cc ;
+  cursor: pointer;
+}

@@ -1,0 +1,166 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  color: var(--white-color);
+}
+.Header .container,
+.Header .container .info {
+  position: relative;
+}
+.Header .container .info {
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header .container .info .left,
+.Header .container .info .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Header .container .info .data {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.Header .container .info .left .data {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header .container .info .left p {
+  color: var(--white-color);
+}
+.Header .container i {
+  color: var(--white-color);
+  font-size: 14px;
+}
+.Header .container .right .MyAccount {
+  background-color: var(--main-color-alt);
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: var(--white-color);
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Header >navigators
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Header .navigators {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 72px;
+}
+.Header .navigators .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.Header .navigators .logo {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header .navigators .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.Header .menu {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 992px) {
+  .Header .menu {
+    display: none;
+  }
+  .Header .container .info {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.Header .menu li {
+  position: relative;
+  height: 72px;
+}
+.Header .menu li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  background-color: transparent;
+  height: 100%;
+  padding: 0 18px;
+  transition: var(--main-transition);
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.Header .menu li .other-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black-color);
+  top: 100%;
+  right: 0;
+  min-width: 200px;
+  opacity: 0;
+  z-index: -99999;
+  transition: var(--main-transition);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Header .menu li .other-menu a {
+  position: relative;
+  text-align: left;
+  justify-content: flex-end;
+  padding: 10px 5px;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #eee;
+}
+.Header .menu li .other-menu a:hover {
+  border-right: 5px solid #0b60a9;
+}
+.Header .menu li:hover > .other-menu {
+  opacity: 1;
+  z-index: 9;
+}
+#root > div > div.landing > div.Header > div.container > div > div > a {
+  color: white !important;
+}
+
+* {
+  text-align: left;
+}
+
+.data.MyAccount a {
+  color: white !important;
+  display: flex;
+  gap: 8px;
+}

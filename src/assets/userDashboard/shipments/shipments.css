@@ -1,0 +1,92 @@
+.shipments_page {
+  padding: 40px 20px;
+  overflow-x: auto;
+
+}
+
+.shipments_filters {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #46a7dd;
+  padding: 10px;
+  position: sticky;
+  left: 0;
+}
+
+
+.shipments_filters .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filters .mode_select {
+  background-color: #eee;
+  height: 60px;
+  padding: 20px;
+  width: 30%;
+  position: relative;
+}
+.shipments_page .mode_select span {
+  position: relative;
+  font-size: 12px;
+  color: #4096ff;
+}
+.filters .mode_select > select {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  border: none;
+  
+}
+.filters > input {
+  width: 30%;
+  background-color: #eee;
+  border: none;
+  height: 60px;
+  padding: 10px;
+
+  outline: none;
+}
+
+.filters .mode_select {
+  flex-direction: column;
+  padding: 4px;
+}
+
+.filters .mode_select > select {
+  outline: none;
+  background: transparent;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .shipments_filters {
+    width: 100%;
+  }
+  .shipments_filters .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .filters .mode_select {
+    background-color: #eee;
+    height: 60px;
+    width: 30%;
+    position: relative;
+  }
+  .shipments_cont {
+    width: 100% !important;
+    margin-top: 40px;
+  }
+}
+
+.shipments_page .mode_select {
+  display: flex;
+}
+
+.shipments_page .mode_select span {
+  position: relative;
+}
+.shipments_page h3 {
+  margin: 12px 0;
+}

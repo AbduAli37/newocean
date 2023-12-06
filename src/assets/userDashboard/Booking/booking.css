@@ -1,0 +1,203 @@
+.pend_actions .pend_action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.pend_action>div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.pend_action>div>* {
+  margin: 0px;
+}
+
+.pending_div {
+  position: fixed;
+  right: 0px;
+  min-height: 100%;
+  z-index: 1600;
+  overflow-y: auto;
+  width: 100%;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: rgba(0, 0, 0, 0.381);
+}
+
+.pend_action h6 {
+  cursor: pointer;
+}
+
+.pending {
+  width: 600px;
+  max-width: 100%;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+  min-height: 100%;
+}
+
+.pending form>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pending form>div input {
+  width: 48%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 0px;
+}
+
+.pending form {
+  position: relative;
+  min-height: 90vh;
+}
+
+.pending h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.pending svg {
+  cursor: pointer;
+}
+
+.pending form>input:last-of-type {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.addbtn {
+  background-color: #0a53be;
+  color: white;
+  border: none;
+  height: 40px;
+  text-transform: capitalize;
+}
+
+.pendingall_div {
+  position: fixed;
+  overflow-y: auto;
+  right: 0px;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.381);
+  width: 100%;
+  top: 0px;
+  z-index: 1500;
+}
+
+.pending_all {
+  position: fixed;
+  right: 0px;
+  width: 600px;
+  max-width: 100%;
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pending_all .addresses .address {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.address .address_person_details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address .address_person_details>div>div {
+  margin-bottom: 10px;
+}
+
+.address button {
+  background-color: #0a53be;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+.pending_all>div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pending_all>div:first-of-type svg {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.save_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #0a53be;
+  border: none;
+}
+
+.pend_actions {
+  width: min(500px, 100%);
+}
+
+#root>div.Auth>div>div.shipments_cont>div>div.pendingall_div>div>div>div a em {
+  font-style: normal;
+  font-size: 12px;
+}
+
+#root>div.Auth>div>div.shipments_cont>div>div.pendingall_div>div>div>div {
+  display: flex;
+  /* flex-wrap: nowrap !important; */
+  align-items: flex-start !important;
+}
+
+#root>div.Auth>div>div.shipments_cont>div>div.pendingall_div>div>div>div a {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.phonecom {
+  flex-wrap: wrap;
+}
+
+@media (max-width:565px) {
+  .phonecom input {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,149 @@
+.login {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.login > div {
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+}
+
+.login .login_img {
+  background-image: url("../../../assets/img/auth-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.login_img > p {
+  color: white;
+  padding: 0 8px 80px 8px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.login_img .logper {
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 20px;
+  color: white;
+}
+.logper > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.logper .logper_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.login .login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.login_form > h3 {
+  font-size: 24px;
+  font-family: Open Sans, sans-serif;
+  line-height: 180%;
+  color: rgb(19, 23, 28);
+  font-weight: 700;
+}
+.login_form > p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Open Sans, sans-serif;
+  line-height: 180%;
+  padding-top: 10px;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+.login_form > p a {
+  font-size: 14px;
+  font-family: Open Sans, sans-serif;
+  line-height: 180%;
+  font-weight: 600;
+  color: rgb(20, 111, 183);
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.login_form > form > div {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 28px;
+}
+.login_form > form > div > span {
+  /* position: absolute; */
+  z-index: 2;
+  top: 5px;
+  margin: 28px 0;
+  left: 5px;
+}
+.login_form > form > div > input {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(208, 208, 216);
+}
+.login_form > form > div > svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  z-index: 44;
+  cursor: pointer;
+}
+.login_form > form > button {
+  color: white;
+  display: flex;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: inherit;
+  border-width: 0px;
+  height: 50px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 180%;
+  padding: 0px;
+  background: rgb(20, 111, 183);
+  color: rgb(255, 255, 255);
+  width: 400px;
+  max-width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.login_form .logfor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  text-align: center;
+}
+
+.row.mb-3 {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+}

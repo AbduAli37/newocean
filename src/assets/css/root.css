@@ -1,0 +1,17 @@
+@import url("./normalize.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+:root {
+  --main-transition: all 0.3s ease-in-out;
+  --main-border-radius: 2.5rem;
+  --main-padding-top: 50px;
+  --main-padding-bottom: 50px;
+  --white-color: #fff;
+  --white-alt-color: #c3d0e3;
+  --black-color: #111111;
+  --dark-color: #1e2a3e;
+  --main-color: #2196f3;
+  --main-color-alt: #0b60a9;
+  --orange-color: rgb(236, 103, 41);
+}

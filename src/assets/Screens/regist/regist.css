@@ -1,0 +1,131 @@
+.search_page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("../../img/OceanBurbig.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.search_page >*{
+  color: white;
+}
+.search_page input {
+  outline: none;
+}
+.search_page >form{
+  width: 400px ;
+  max-width: 100%;
+}
+.search_page .log{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search_page >form >a{
+  color: rgb(20, 111, 183);
+}
+.search_page >form h3{
+  color: rgb(19, 23, 28);
+font-weight: 700;
+font-size: 24px;
+font-family: Open Sans, sans-serif;
+}
+.search_page >form >select{
+  height: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+  background-color: #eee;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+}
+.search_page >form >select::after{
+  position: absolute;
+  content: '';
+  background-color: #ccc;
+  height: 2px;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+}
+
+.search_page .names{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.search_page .names >input{
+  width: 49%;
+  max-width: 50%;
+}
+
+.search_page input{
+  height: 50px;
+  border: none;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+.search_page .em_pass{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+.search_page .em_pass> *{
+  width: 49%;
+}
+/* .em_pass .password{
+  width: 100%;
+} */
+.em_pass .password >input{
+  width: 100%;
+}
+.em_pass .password >span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.em_pass .password >span >svg{
+  color: black;
+}
+.PhoneInput{
+  margin-bottom: 20px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.privacy h2{
+  text-align: center;
+  font-size: 14px;
+  font-family: Open Sans, sans-serif;
+  line-height: 180%;
+  font-weight: 400;
+}
+
+.search_page button{
+  background: rgb(20, 111, 183);
+color: rgb(255, 255, 255);
+width: 100%;
+height: 40px;
+border: none;
+text-align: center;
+margin-top: 20px;
+}
